@@ -1,6 +1,5 @@
 
-function age()
-{
+function age(){
     var age = prompt('How old you is?');
    
 
@@ -32,8 +31,7 @@ function fullName(){
 }
 
 
-function favGenre()
-{
+function favGenre(){
     var genre = prompt('What your favorite music genres is?');
 
     if (genre = true){
@@ -51,7 +49,23 @@ function favGenre()
     return yourAnswer;
 }
 
+function question(){
+    var month = false;
+    while (!month){
+        var answer = prompt('What month was I born in?');
+        if (answer.toLowerCase() === 'january'){
+            alert('Congratulations! (reference to Day6\'s song) You are correct.');
+            month = true;
+        } else {
+            alert('Woops! You are wrong, please try again.');
+        }
+        
+    }
+}
+
+
 
 age(); 
 fullName(); 
 favGenre();
+question();
